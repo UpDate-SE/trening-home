@@ -1,0 +1,8 @@
+#navbar-home {
+    height: 15vh;
+}
+
+#navbar-home .brand-logo {
+    max-height: 15vh;
+    width: 100%;
+}
