@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Collapse, Nav, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler } from "reactstrap";
 
-import { TrenningLogoSm } from "../assets";
+import { TreningLogoSm } from "../assets";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "styles/NavbarHome.css";
@@ -16,11 +16,11 @@ const NavbarHome = ():JSX.Element => {
             expand='md'
             fixed='top'
             id='navbar-home'
-            className='user-select-none border-bottom border-2 border-danger'
+            className='bg-light user-select-none border-bottom border-2 border-danger'
         >
             <NavbarBrand href='#inicio'>
                 <img
-                    src={TrenningLogoSm}
+                    src={TreningLogoSm}
                     className='img-fluid brand-logo'
                     alt='decorative, logo of the company'
                     draggable='false'
@@ -28,7 +28,9 @@ const NavbarHome = ():JSX.Element => {
             </NavbarBrand>
             <NavbarToggler onClick={toggleCollapse} className='ms-auto' />
             <Collapse navbar isOpen={collapseOpen}>
-                <Nav navbar className='ms-auto'>
+                <Nav navbar className='ms-auto text-end bg-light'
+                    style={{width: 'max-content', padding: '0 25px'}}
+                >
                     <NavItem>
                         <NavLink href='#nosotros'>
                             Nosotros
