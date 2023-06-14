@@ -1,6 +1,6 @@
 import { Container } from "reactstrap";
 
-import 'bootstrap/dist/css/bootstrap.css';
+import 'scss/css/style.css';
 import 'styles/CoursesScrollContainer.css';
 
 type Course = {

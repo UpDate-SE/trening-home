@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Carousel, CarouselIndicators, CarouselItem, Container, List } from 'reactstrap';
 
-import 'bootstrap/dist/css/bootstrap.css';
+import 'scss/css/style.css';
 import 'styles/CarouselAbout.css';
 
 const items: JSX.Element[] = [

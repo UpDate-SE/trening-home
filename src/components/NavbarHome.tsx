@@ -3,8 +3,8 @@ import { Collapse, Nav, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler } f
 
 import { TreningLogoSm } from "../assets";
 
-import "bootstrap/dist/css/bootstrap.css";
-import "styles/NavbarHome.css";
+import 'scss/css/style.css';
+import 'styles/NavbarHome.css';
 
 const NavbarHome = ():JSX.Element => {
     const [collapseOpen, setCollapseOpen] = useState<boolean>(false);
