@@ -1,0 +1,14 @@
+.carousel-about .carousel-container {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-about .carousel-indicators button {
+    width: 50px;
+}
+
+.carousel-about .carousel-indicators .active {
+    background-color: var(--bs-danger);
+}
