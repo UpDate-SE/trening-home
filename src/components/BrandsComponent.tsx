@@ -27,7 +27,8 @@ const BrandsComponent = (): JSX.Element => {
                         src={image}
                         key={index}
                         alt='logo de una empresa'
-                        className='img-fluid mx-4'
+                        className='img-fluid mx-4 user-select-none'
+                        draggable={false}
                         style={{
                             minHeight: '100px',
                             maxHeight: '15vh',

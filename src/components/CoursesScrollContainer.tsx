@@ -21,10 +21,14 @@ const CoursesScrollContainer = ({courses}: CoursesScrollContainerProps): JSX.Ele
         >
             {courses.map((course, index) => {
                 return(
-                    <a href={course.ref} key={index}>
+                    <a
+                        href={course.ref} 
+                        key={index}
+                        draggable={false}
+                    >
                         <img
                             src={course.image}
-                            className='img-fluid image-course'
+                            className='img-fluid image-course user-select-none'
                             draggable={false}
                             alt={course.alt}
                         />
