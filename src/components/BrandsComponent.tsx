@@ -1,19 +1,11 @@
 import { Container } from "reactstrap"
 
+import { importAll } from "helpers/ImportAll";
+
 import 'scss/css/style.css';
 
-const importAll = (location: Record<string, any>): any[] => {
-    console.log(location.keys());
-    return location.keys().map(location);
-}
-    
 const context = require.context('/src/assets/brands', false, /^(?!\.\/).*\.webp$/);
-
-console.log(context);
-
 const imageList = importAll(context) as string[];
-
-console.log(imageList);
 
 const BrandsComponent = (): JSX.Element => {
     return(
