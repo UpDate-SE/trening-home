@@ -1,0 +1,17 @@
+.carousel-facilities img {
+    min-height: 300px;
+    height: 75vh;
+    object-fit: cover
+}
+
+.carousel-facilities .carousel-indicators {
+    bottom: -25px;
+}
+
+.carousel-facilities .carousel-indicators button {
+    width: 50px;
+}
+
+.carousel-facilities .carousel-indicators .active {
+    background-color: var(--bs-danger);
+}
