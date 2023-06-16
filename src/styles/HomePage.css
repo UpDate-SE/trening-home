@@ -1,0 +1,29 @@
+.home-page .banner-top {
+    margin-top: 10vh !important;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8);
+}
+
+.home-page .us {
+    min-height: 85vh;
+}
+
+.home-page .us #image-us {
+    max-height: 95%;
+}
+
+.home-page .anchor {
+    position: absolute;
+    top: -10vh;
+    left:0px
+}
+
+.home-page #instagram {
+    color: white;
+    padding: 0 2px;
+    border-radius: 25%;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
