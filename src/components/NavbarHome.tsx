@@ -30,6 +30,7 @@ const NavbarHome = ():JSX.Element => {
             <Collapse navbar isOpen={collapseOpen}>
                 <Nav navbar className='ms-auto text-end bg-light'
                     style={{width: 'max-content', padding: '0 25px'}}
+                    onClick={toggleCollapse}
                 >
                     <NavItem>
                         <NavLink href='#nosotros'>
