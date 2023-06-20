@@ -18,8 +18,8 @@ const GalleryPage = (): JSX.Element => {
                 fixed='top'
                 className='bg-light user-select-none border-bottom border-2 border-danger'
                 style={{
-                    minHeight: '70px',
-                    height: '10vh'
+                    minHeight: '8vh',
+                    height: 'auto'
                 }}
             >
                 <NavbarBrand
@@ -32,8 +32,9 @@ const GalleryPage = (): JSX.Element => {
                         alt='decorative, logo of the company'
                         draggable='false'
                         style={{
-                            minHeight: '49px',
-                            height: '7vh'
+                            minHeight: '32px',
+                            maxHeight: '5vh',
+                            maxWidth: '200px'
                         }}
                     />
                 </NavbarBrand>

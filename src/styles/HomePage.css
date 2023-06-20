@@ -17,7 +17,6 @@
 .home-page .anchor {
     position: absolute;
     top: -10vh;
-    left:0px
 }
 
 .home-page #instagram {
@@ -26,4 +25,20 @@
     border-radius: 25%;
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+@media screen and (max-width: 768px) {
+    .home-page .banner-top {
+        margin-top: 8vh !important;
+        height: 24vh;
+        min-height: 180px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .home-page .anchor {
+        position: absolute;
+        top: -8vh;
+    }
 }

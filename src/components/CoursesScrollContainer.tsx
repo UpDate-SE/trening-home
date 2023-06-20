@@ -28,7 +28,7 @@ const CoursesScrollContainer = ({courses}: CoursesScrollContainerProps): JSX.Ele
                     >
                         <img
                             src={course.image}
-                            className='img-fluid image-course user-select-none'
+                            className='image-course user-select-none'
                             draggable={false}
                             alt={course.alt}
                         />

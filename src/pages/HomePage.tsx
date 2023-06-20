@@ -62,19 +62,25 @@ const HomePage = ():JSX.Element => {
                 fluid
                 className='position-relative courses px-md-5 mb-4'
             >
-                <span
-                    className='fs-2 fw-bold user-select-none'
+                <Container fluid
+                    className='p-0 pb-3'
                 >
-                    Cursos con los que contamos
-                </span>
-                <a
-                    href='/galeria'
-                    className='fw-bold text-danger ms-4 opacity-90-hover user-select-none'
-                >
-                    <span>
-                        Galería de fotos
+                    <span
+                        className='fs-2 fw-bold user-select-none'
+                    >
+                        Cursos con los que contamos
                     </span>
-                </a>
+                    <br/>
+                    <a
+                        href='/galeria'
+                        className='fw-bold text-danger opacity-90-hover user-select-none'
+                    >
+                        <span>
+                            Galería de fotos
+                        </span>
+                    </a>
+                    <br/>
+                </Container>
                 <CoursesScrollContainer
                     courses={[
                         {
@@ -99,7 +105,9 @@ const HomePage = ():JSX.Element => {
                     className='p-0 pt-2 fs-4 text-end'
                 >
                     <a
-                        href='#courses'
+                        href='https://docs.google.com/presentation/d/1yKzCeYLiYyqNpbLI_b7hZ4OcDfh8ZAzt'
+                        target='_blank'
+                        rel='noreferrer'
                         className='text-danger fw-bold 
                             user-select-none
                             opacity-75-hover
@@ -136,12 +144,19 @@ const HomePage = ():JSX.Element => {
                     className='p-0 text-end'
                 >
                     <span>Si ya eres miembro: </span>
-                    <Button
-                        color='danger'
-                        className='ms-3 fw-bold'
+                    <a
+                        href='https://drive.google.com/file/d/1pXx_REQut0JH_WrVQULK9ozDIfU3tRlF'
+                        target='_blank'
+                        rel='noreferrer'
+                        className='text-decoration-none'
                     >
-                        Descarga la app
-                    </Button>
+                        <Button
+                            color='danger'
+                            className='ms-3 fw-bold opacity-75-hover'
+                        >
+                            Descarga la app
+                        </Button>
+                    </a>
                 </Container>
                 <div className='anchor' id='app'></div>
             </Container>

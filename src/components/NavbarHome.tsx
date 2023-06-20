@@ -28,7 +28,7 @@ const NavbarHome = ():JSX.Element => {
             </NavbarBrand>
             <NavbarToggler onClick={toggleCollapse} className='ms-auto' />
             <Collapse navbar isOpen={collapseOpen}>
-                <Nav navbar className='ms-auto text-end bg-light'
+                <Nav navbar className='ms-auto text-end bg-light pe-0'
                     style={{width: 'max-content', padding: '0 25px'}}
                     onClick={toggleCollapse}
                 >
