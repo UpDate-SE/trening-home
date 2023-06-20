@@ -1,10 +1,11 @@
 import { Button, Col, Container, Row } from "reactstrap";
 import { AboutUs, Banner, CollegePrep, Forklift, ShowingInfo, TransportPersonnel } from "assets";
 
-import { BrandsComponent, CarouselAbout, CarouselFacilities, CoursesScrollContainer, NavbarHome,  } from 'components';
+import { BrandsComponent, CarouselAbout, CarouselFacilities, CoursesScrollContainer, NavbarHome } from 'components';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import 'scss/css/style.css';
 import 'styles/HomePage.css';
@@ -146,17 +147,17 @@ const HomePage = ():JSX.Element => {
             </Container>
             <Container id='contact-section'
                 fluid
-                className='position-relative contact px-md-5 pb-3'
+                className='position-relative contact px-md-5 pb-3 pt-0'
             >
-                <span
-                    className='fs-3 fw-bold user-select-none'
-                >
-                    Conoce nuestras instalaciones
-                </span>
                 <Row>
                     <Col
                         md={6}
                     >
+                        <span
+                            className='fs-3 fw-bold user-select-none'
+                        >
+                            Conoce nuestras instalaciones
+                        </span>
                         <CarouselFacilities />
                     </Col>
                     <Col md={1} />
@@ -188,6 +189,21 @@ const HomePage = ():JSX.Element => {
                             >
                                 Av. Industrias #896 int. E. Col Valle Dorado, C.P. 78399 Tel(444) 688 61 83 Cel- 44 46 65 76 36
                             </span>
+                            <a
+                                href='mailto:atencion@treningslp.com'
+                                className='text-decoration-none my-1'
+                            >
+                                <Button
+                                    className='btn-danger opacity-75-hover text-light
+                                        d-flex align-items-center'
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faEnvelope}
+                                        className='fs-3 me-3'
+                                    />
+                                    atencion@treningslp.com
+                                </Button>
+                            </a>
                             <Container
                                 fluid
                                 className='pt-2 d-flex justify-content-evenly'
