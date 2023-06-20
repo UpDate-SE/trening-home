@@ -62,19 +62,25 @@ const HomePage = ():JSX.Element => {
                 fluid
                 className='position-relative courses px-md-5 mb-4'
             >
-                <span
-                    className='fs-2 fw-bold user-select-none'
+                <Container fluid
+                    className='p-0 pb-3'
                 >
-                    Cursos con los que contamos
-                </span>
-                <a
-                    href='/galeria'
-                    className='fw-bold text-danger ms-4 opacity-90-hover user-select-none'
-                >
-                    <span>
-                        Galería de fotos
+                    <span
+                        className='fs-2 fw-bold user-select-none'
+                    >
+                        Cursos con los que contamos
                     </span>
-                </a>
+                    <br/>
+                    <a
+                        href='/galeria'
+                        className='fw-bold text-danger opacity-90-hover user-select-none'
+                    >
+                        <span>
+                            Galería de fotos
+                        </span>
+                    </a>
+                    <br/>
+                </Container>
                 <CoursesScrollContainer
                     courses={[
                         {
