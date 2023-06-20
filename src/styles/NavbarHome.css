@@ -4,5 +4,18 @@
 
 #navbar-home .brand-logo {
     max-height: 7vh;
-    width: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar-home {
+        min-height: 8vh;
+        height: unset;
+    }
+
+    #navbar-home .brand-logo {
+        min-height: 32px;
+        max-height: 5vh;
+        max-width: 200px;
+    }
 }
