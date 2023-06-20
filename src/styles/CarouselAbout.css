@@ -12,3 +12,9 @@
 .carousel-about .carousel-indicators .active {
     background-color: var(--bs-danger);
 }
+
+@media screen and (max-width: 768px) {
+    .carousel-about .carousel-container {
+        min-height: 45vh;
+    }
+}
