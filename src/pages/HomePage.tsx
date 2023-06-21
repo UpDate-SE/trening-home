@@ -145,7 +145,7 @@ const HomePage = ():JSX.Element => {
                 >
                     <span>Si ya eres miembro: </span>
                     <a
-                        href='https://drive.google.com/file/d/1pXx_REQut0JH_WrVQULK9ozDIfU3tRlF'
+                        href='https://drive.google.com/drive/folders/1J5TBaJH8RMdHUk_4JQR9L286an6ffF6H'
                         target='_blank'
                         rel='noreferrer'
                         className='text-decoration-none'
