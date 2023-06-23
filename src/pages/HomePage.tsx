@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from "reactstrap";
-import { AboutUs, Banner, CollegePrep, Forklift, ShowingInfo, TransportPersonnel } from "assets";
+import { AboutUs, Banner, ShowingInfo } from "assets";
 
 import { BrandsComponent, CarouselAbout, CarouselFacilities, CoursesScrollContainer, NavbarHome } from 'components';
 
@@ -81,25 +81,7 @@ const HomePage = ():JSX.Element => {
                     </a>
                     <br/>
                 </Container>
-                <CoursesScrollContainer
-                    courses={[
-                        {
-                            image: Forklift,
-                            alt: 'Imagen promocional de un curso para manejo y operación de montacargas. Se muestra una persona operando un montacargas.',
-                            ref: '#courses'
-                        },
-                        {
-                            image: TransportPersonnel,
-                            alt: 'Imagen promocional de un curso para personal de transporte. Se muestra una persona conduciendo un autobús.',
-                            ref: '#courses'
-                        },
-                        {
-                            image: CollegePrep,
-                            alt: 'Imagen promocional de un curso de preparación para entrar a la universidad. Se muestran dos fotografías, a la izquierda se ve el cuerpo de un médico con su bata y su estetoscopio, a la derecha se muestra una mujer con un casco de seguridad amarillo y unos lentes de protección.',
-                            ref: '#courses'
-                        }
-                    ]}
-                />
+                <CoursesScrollContainer />
                 <Container
                     fluid
                     className='p-0 pt-2 fs-4 text-end'
@@ -202,7 +184,7 @@ const HomePage = ():JSX.Element => {
                             <span
                                 className='px-5'
                             >
-                                Av. Industrias #896 int. E. Col Valle Dorado, C.P. 78399 Tel(444) 688 61 83 Cel- 44 46 65 76 36
+                                Av. Industrias #896 int. E. Col Valle Dorado, C.P. 78399 Tel(444) 688 61 83 Cel 44 44 32 80 10
                             </span>
                             <a
                                 href='mailto:atencion@treningslp.com'
