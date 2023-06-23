@@ -139,7 +139,7 @@ const HomePage = ():JSX.Element => {
                         Aplicación desarrollada por <a href='https://advancedcodese.com'>Advanced Code SE</a>
                     </span>
                 </span>
-                <Container
+                {/*<Container
                     fluid
                     className='p-0 text-end'
                 >
@@ -157,7 +157,7 @@ const HomePage = ():JSX.Element => {
                             Descarga la app
                         </Button>
                     </a>
-                </Container>
+                </Container>*/}
                 <div className='anchor' id='app'></div>
             </Container>
             <Container id='contact-section'
