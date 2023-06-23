@@ -1,40 +1,28 @@
 import { Container } from "reactstrap";
 
+import { importAll } from "helpers/ImportAll";
+
 import 'scss/css/style.css';
 import 'styles/CoursesScrollContainer.css';
 
-type Course = {
-    image: string;
-    alt: string;
-    ref: string;
-}
+const context = require.context('/src/assets/courses', false, /^(?!\.\/).*\.webp$/);
+const coursesImages = importAll(context) as string[];
 
-type CoursesScrollContainerProps = {
-    courses: Course[];
-}
-
-const CoursesScrollContainer = ({courses}: CoursesScrollContainerProps): JSX.Element => {
+const CoursesScrollContainer = (): JSX.Element => {
     return (
         <Container
             fluid
             className='p-2 d-flex overflow-x-scroll gap-5 border border-2 border-dark'
         >
-            {courses.map((course, index) => {
-                return(
-                    <a
-                        href={course.ref} 
-                        key={index}
-                        draggable={false}
-                    >
-                        <img
-                            src={course.image}
-                            className='image-course user-select-none'
-                            draggable={false}
-                            alt={course.alt}
-                        />
-                    </a>
-                )
-            })}
+            {coursesImages.map((course, index) => (
+                <img
+                    key={index}
+                    className='image-course user-select-none'
+                    src={course}
+                    alt=''
+                    draggable={false}
+                />    
+            ))}
         </Container>
     )
 }
