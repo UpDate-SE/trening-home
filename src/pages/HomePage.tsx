@@ -121,25 +121,6 @@ const HomePage = ():JSX.Element => {
                         Aplicación desarrollada por <a href='https://advancedcodese.com'>Advanced Code SE</a>
                     </span>
                 </span>
-                {/*<Container
-                    fluid
-                    className='p-0 text-end'
-                >
-                    <span>Si ya eres miembro: </span>
-                    <a
-                        href='https://drive.google.com/drive/folders/1J5TBaJH8RMdHUk_4JQR9L286an6ffF6H'
-                        target='_blank'
-                        rel='noreferrer'
-                        className='text-decoration-none'
-                    >
-                        <Button
-                            color='danger'
-                            className='ms-3 fw-bold opacity-75-hover'
-                        >
-                            Descarga la app
-                        </Button>
-                    </a>
-                </Container>*/}
                 <div className='anchor' id='app'></div>
             </Container>
             <Container id='contact-section'
