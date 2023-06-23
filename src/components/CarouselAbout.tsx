@@ -82,6 +82,8 @@ const CarouselAbout = (): JSX.Element => {
             next={next}
             previous={previous}
             className='carousel-about'
+            interval={3000}
+            ride='carousel'
         >
             <CarouselIndicators
                 items={slides}
